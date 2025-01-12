@@ -36,7 +36,8 @@
           
           <button class="button" onClick="window.open('wish.html');">
             A Message For You
-       </button>
+          </button>
+         <button onclick="document.getElementById('hbdmp').muted = false;">Unmute</button>
 
       </div>
       <div class="s-1"></div>
@@ -58,7 +59,7 @@
   
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-  <audio id="hbdmp" autoplay loop>
+  <audio id="hbdmp" autoplay loop muted>
     <source src="assets/hbd.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
