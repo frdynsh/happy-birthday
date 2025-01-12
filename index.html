@@ -61,7 +61,13 @@
     Your browser does not support the audio element.
   </audio>
   <script>
+    const audio = document.getElementById("hbdmp");
+    const playButton = document.getElementById("playButton");
 
+    playButton.addEventListener("click", () => {
+      audio.play();
+    });
+     
     setTimeout(function() {
       $('.lording').hide()
     }, 5000);
