@@ -55,19 +55,12 @@
   
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-  <audio id="hbdmp" autoplay loop >
-      
+  <audio id="hbdmp" autoplay loop muted>
     <source src="assets/hbd.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
-  <script>
-    const audio = document.getElementById("hbdmp");
-    const playButton = document.getElementById("playButton");
-
-    playButton.addEventListener("click", () => {
-      audio.play();
-    });
-     
+   
+  <script>  
     setTimeout(function() {
       $('.lording').hide()
     }, 5000);
@@ -76,8 +69,7 @@
       $('#container').show()
     }, 5199);
     
-    
-    </script>
+  </script>
     
 </body>
 </html>
