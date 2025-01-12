@@ -37,13 +37,9 @@
           <button class="button" onClick="window.open('wish.html');">
             A Message For You
           </button>
-         <button onclick="document.getElementById('hbdmp').muted = false;">Unmute</button>
 
       </div>
       <div class="s-1"></div>
-       <div class="right-col">
-        <img src="images/play.png" id="icon">
-      </div>
       </div>
       <span id="count"></span>
 
@@ -59,29 +55,11 @@
   
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-  <audio id="hbdmp" autoplay loop muted>
+  <audio id="hbdmp" autoplay loop>
     <source src="assets/hbd.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
-   <script>
-    const audio = document.getElementById("hbdmp");
-    const playButton = document.getElementById("playButton");
-
-    playButton.addEventListener("click", () => {
-      audio.play();
-    });
-    icon.onclick = function(){
-     if(hbdmp.paused){
-       hbdmp.play();
-       icon.src ="images/pause.png";
-     }else{
-       hbdmp.pause();
-       icon.src = "images/play.png";
-     }
-
-    }
-  </script>
   <script>  
     setTimeout(function() {
       $('.lording').hide()
